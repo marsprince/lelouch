@@ -1,6 +1,5 @@
 ## Welcome to My Blog
 
-# Index
-1. [test](https://github.com/marsprince/lelouch/docs/test.md)
+# 学习
 
-
+1. [attr和prop](https://github.com/marsprince/lelouch/docs/learn/attr-and-prop.md)
