@@ -44,7 +44,7 @@ export function withMacroTask (fn: Function): Function {
 
 然鹅
 
-However, the change has actually led to[more problems of its own](https://github.com/vuejs/vue/issues?q=label%3A%22nextTick+related%22+is%3Aclosed), outweighing the benefit of the fix.
+However, the change has actually led to [more problems of its own](https://github.com/vuejs/vue/issues?q=label%3A%22nextTick+related%22+is%3Aclosed), outweighing the benefit of the fix.
 
 ![5c692b38ac438](https://i.loli.net/2019/02/17/5c692b38ac438.jpg)
 
@@ -128,11 +128,11 @@ e.timeStamp和date.now有的时候并不是同一个相对起始时间（relativ
 
 
 
-然后现在的代码变成了这个[样子](https://github.com/vuejs/vue/blob/0bad7e2a3508b55abaa8aec2a1bd9c1127305cb4/src/platforms/web/runtime/modules/events.js#L45)，我也没心情研究具体逻辑了，总之就是：
+然后现在的代码变成了这个[样子](https://github.com/vuejs/vue/blob/0bad7e2a3508b55abaa8aec2a1bd9c1127305cb4/src/platforms/web/runtime/modules/events.js#L45)
 
 ![5c69322bc9a7b](https://i.loli.net/2019/02/17/5c69322bc9a7b.jpg)
 
-大家有时间可以看看逻辑，反正我是看着就头疼，辛苦尤大大年初三还在改bug了。
+大家有时间可以看看逻辑，我没仔细看，辛苦尤大大年初三还在改bug了。
 
 
 
