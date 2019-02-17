@@ -4,13 +4,13 @@
 
 默认情况下，v-bind是绑定到attribute上的，那么，什么是attribute和property呢？
 
-
-
 vue官网指向了一篇stackoverflow上的高赞[回答](https://stackoverflow.com/questions/6003819/what-is-the-difference-between-properties-and-attributes-in-html#answer-6004028)。其实很简单，attr是属于html的，而prop是属于js的。在w3的文档里，前者被叫做HTML attributes或者[content attributes](https://www.w3.org/TR/html5/dom.html#content-attributes)，后者被叫做IDL attributes。
 
 举例：
 
+```html
 <input id="test" type="testType" value="name">
+```
 
 这段html就存在两个attr，type 和 value。当浏览器去解析dom的时候，就会将这段html渲染为一个[HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement)。根据标签的不同，渲染出的对象类型也不同，以后我会单独写这一块。这个对象上会包含若干属性，这就是prop。而html上的attr会被存在一个叫attributes的数组里。
 
