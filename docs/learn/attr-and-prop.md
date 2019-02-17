@@ -12,7 +12,7 @@ vue官网指向了一篇stackoverflow上的高赞[回答](https://stackoverflow.
 <input id="test" type="testType" value="name">
 ```
 
-这段html就存在两个attr，type 和 value。当浏览器去解析dom的时候，就会将这段html渲染为一个[HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement)。根据标签的不同，渲染出的对象类型也不同，以后我会单独写这一块。这个对象上会包含若干属性，这就是prop。而html上的attr会被存在一个叫attributes的数组里。
+这段html就存在两个attr，type 和 value。当浏览器去解析dom的时候，就会将这段html渲染为一个[HTMLInputElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement)。根据标签的不同，渲染出的对象类型也不同，以后我会单独写这一块。这个对象上会包含若干属性，这就是prop。而html上的attr会被存在一个叫attributes的对象里。
 
 那么这两个有什么联系呢，浏览器会根据你的attr去生成对象的一些prop。其中又分N多种情况：
 
