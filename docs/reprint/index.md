@@ -2,6 +2,8 @@
 
 [H5键盘兼容性小结](https://juejin.im/post/5c6d1c8b6fb9a049de6df441)
 
+[H5键盘小结2](https://www.jb51.net/article/140582.htm)
+
 [滚动穿透](https://juejin.im/post/5c2dc9cce51d45690a254b79)
 
 [html2canvas](https://www.jianshu.com/p/22bd5b98e38a)
