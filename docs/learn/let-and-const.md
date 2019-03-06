@@ -23,8 +23,6 @@ for (let i = 1; i <= 5; i++) {
 
 let实际上是在内部声明了一个新的变量，参考 http://www.ecma-international.org/ecma-262/6.0/#sec-for-statement-runtime-semantics-labelledevaluation
 
-
-
 2.在程序或者函数的顶层，let并不会像一样在全局对象上创造一个属性
 
 ```javascript
@@ -49,8 +47,6 @@ let x = 'global'
 如果 RHS 查询在嵌套的*作用域*的任何地方都找不到一个值，这会导致*引擎*抛出一个`ReferenceError`。必须要注意的是这个错误的类型是`ReferenceError`。
 
 因此在试图console.log(x)的时候，实际上是一个RHS 查询，它在当前作用域了找到了x变量，因此不会继续向上找到global。在试图访问的时候失败了，因此抛出了`ReferenceError`。
-
-
 
 还有一个问题可以反映这个结论：
 
@@ -77,7 +73,5 @@ window.x = 1
 ```
 
 就会成功，因为这相当于绕过了声明的语法重新搞了一个变量出来，是可以的。
-
-
 
 `const`和`let`完全一样，区别在于const声明一个引用不可变的对象（内容可修改，即可修改const的对象和数组，但不可重写）。

@@ -65,13 +65,9 @@ Object.create(proto, [propertiesObject])
 }
 ```
 
-
-
 ### 例外
 
 如果`propertiesObject`参数不是 [`null`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/null "值 null 特指对象的值未设置。它是 JavaScript 基本类型 之一。")或一个对象，则抛出一个[`TypeError`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/TypeError "TypeError（类型错误） 对象用来表示值的类型非预期类型时发生的错误。")异常。
-
-
 
 所以，用三行代码来实现继承，就是这样的:
 
@@ -82,9 +78,15 @@ function SubClass() {
 }
 // 子类续承父类
 SubClass.prototype = Object.create(SuperClass.prototype); 
-SubClass.prototype.constructor = SubClass; 
+SubClass.prototype.constructor = SubClass;
 ```
 
+兼容写法
 
-
-
+```javascript
+function create(proto) { 
+    function F() {}
+    F.prototype = proto;
+    return new F();
+}
+```
