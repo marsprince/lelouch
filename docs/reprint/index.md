@@ -10,6 +10,8 @@
 
 ## 面试
 
+[defer和async的区别](https://segmentfault.com/q/1010000000640869)(都是异步加载，但是执行时机不同,async立即执行，defer会在要在所有元素解析完成之后，DOMContentLoaded 事件触发之前完成。)
+
 ## 性能优化
 
 [京东PLUS会员项目前端性能优化实践](https://mp.weixin.qq.com/s?__biz=MzUxMDYxNTgwMA==&mid=2247484283&idx=1&sn=d2892c4e78bf8a93d99e63995a2fb92b&chksm=f9010aecce7683fa362e31dcce3bb8f698412db88251c16b9f95efdb852ba8d05865ebc59045&token=1791461149&lang=zh_CN#rd)
