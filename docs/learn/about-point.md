@@ -83,7 +83,12 @@ A Reference consists of three components, the base value component, the referenc
 
 引用类型还有一个特性，就是在执行函数运算时，会把this指向地址内的对象，这也是为什么a.x里面的this指向a的原因。
 
+还有关于数组的，交换两个变量的值，和这个类似
 
+```javascript
+let a = 1, b = 2;
+a=[b, b=a][0]
+```
 
 进阶题：
 
