@@ -5,7 +5,6 @@
 捕获 => 目标 => 冒泡
 
 
-
 Q1：所有的事件都有这三个阶段吗？
 
 不是，参考[MDN事件说明](https://developer.mozilla.org/zh-CN/docs/Web/Events)。例如focus，blur就没有冒泡，推荐使用focusin，focusout代替！
