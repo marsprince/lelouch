@@ -10,7 +10,6 @@ Q1：所有的事件都有这三个阶段吗？
 不是，参考[MDN事件说明](https://developer.mozilla.org/zh-CN/docs/Web/Events)。例如focus，blur就没有冒泡，推荐使用focusin，focusout代替！
 
 
-
 Q2：都是先捕获再冒泡吗？多个事件执行顺序如何？
 
 先捕获再冒泡，注意区别在target上没有捕获和冒泡区别，按照添加顺序执行，先添加先触发。
