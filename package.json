@@ -5,6 +5,7 @@
   "author": "liujia02 <bit_liujia@163.com>",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/config-conventional": "^8.0.0",
     "commitlint": "^8.0.0",
     "husky": "^3.0.0"
   },
