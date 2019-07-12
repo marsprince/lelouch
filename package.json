@@ -1,0 +1,16 @@
+{
+  "name": "lelouch",
+  "version": "1.0.0",
+  "repository": "https://github.com/marsprince/lelouch.git",
+  "author": "liujia02 <bit_liujia@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "commitlint": "^8.0.0",
+    "husky": "^3.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
